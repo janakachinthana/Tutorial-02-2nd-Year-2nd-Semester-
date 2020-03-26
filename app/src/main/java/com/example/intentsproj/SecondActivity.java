@@ -37,7 +37,6 @@ public class SecondActivity extends AppCompatActivity {
                 Add();
             }
         });
-
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,11 +64,11 @@ public class SecondActivity extends AppCompatActivity {
         EditText txt1 = findViewById(R.id.editText3);
         EditText txt2 = findViewById(R.id.editText4);
         TextView txt3 = findViewById(R.id.textView5);
-
+        TextView txt4 = findViewById(R.id.answertxt);
         int num1 = Integer.parseInt(txt1.getText().toString());
         int num2 = Integer.parseInt(txt2.getText().toString());
         int result = num1 + num2;
-        txt3.setText("Your Addition Is : "+ String.valueOf(result));
+        txt3.setText(num1 + " + " + num2 +" " + " = " +String.valueOf(result));
 
     }
 
@@ -82,7 +81,7 @@ public class SecondActivity extends AppCompatActivity {
         int num1 = Integer.parseInt(txt1.getText().toString());
         int num2 = Integer.parseInt(txt2.getText().toString());
         int result = num1 - num2;
-        txt3.setText("Your Substraction Is : "+ String.valueOf(result));
+        txt3.setText(num1 + " - " + num2 +" " + " = " +String.valueOf(result));
 
     }
 
@@ -95,7 +94,7 @@ public class SecondActivity extends AppCompatActivity {
         int num1 = Integer.parseInt(txt1.getText().toString());
         int num2 = Integer.parseInt(txt2.getText().toString());
         int result = num1 * num2;
-        txt3.setText("Your Multification Is : "+ String.valueOf(result));
+        txt3.setText(num1 + " * " + num2 +" " + " = " + String.valueOf(result));
 
     }
 
@@ -108,7 +107,7 @@ public class SecondActivity extends AppCompatActivity {
         int num1 = Integer.parseInt(txt1.getText().toString());
         int num2 = Integer.parseInt(txt2.getText().toString());
         int result = num1 / num2;
-        txt3.setText("Your Divition Is : "+ String.valueOf(result));
+        txt3.setText(num1 + " / " + num2 +" " + " = " +String.valueOf(result));
 
     }
 }

@@ -7,4 +7,5 @@
     <string name="substractBtn">-</string>
     <string name="multipleBtn">*</string>
     <string name="devidedBtn">/</string>
+    <string name="answertxt">Your Answer</string>
 </resources>
